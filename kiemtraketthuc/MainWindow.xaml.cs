@@ -24,5 +24,15 @@ namespace kiemtraketthuc
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            cho Cho = new cho();
+            Cho.dongvatName = "Gâu gâu";
+            Cho.Talk();
+            meo Meo = new meo();
+            Meo.dongvatName = "Meo meo";
+            Meo.Talk();
+        }
     }
 }
