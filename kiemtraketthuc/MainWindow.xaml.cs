@@ -29,9 +29,11 @@ namespace kiemtraketthuc
         {
             cho Cho = new cho();
             Cho.dongvatName = "Gâu gâu";
+            Cho.dongvatmaulong = "đen";
             Cho.Talk();
             meo Meo = new meo();
             Meo.dongvatName = "Meo meo";
+            Meo.dongvatmaulong = "trắng";
             Meo.Talk();
         }
     }

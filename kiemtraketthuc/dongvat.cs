@@ -23,14 +23,18 @@ namespace kiemtraketthuc
             set { name = value; }
         }
         private string maulong;
-       
+        public string dongvatmaulong
+        {
+            get { return maulong; }
+            set { maulong = value; }
+        }
 
         public virtual void Talk()
         {
-            if (dongvatName.Equals("Gâu gâu")) 
-                MessageBox.Show(this.dongvatName );
-            else if (dongvatName.Equals("Meo meo")) 
-                MessageBox.Show(this.dongvatName );
+            if (dongvatName.Equals("Gâu gâu") && (dongvatmaulong.Equals("đen")))
+                MessageBox.Show(this.dongvatName + " tôi là chó lông " + this.dongvatmaulong);
+            else if (dongvatName.Equals("Meo meo") && (dongvatmaulong.Equals("trắng")))
+                MessageBox.Show(this.dongvatName + " tôi là mèo lông " + this.dongvatmaulong);
         }
     }
 }
